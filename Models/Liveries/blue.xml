@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Blue</name>
+     <texture-fuselage>Liveries/blue/F-23C-Fuselage-Wings.jpg</texture-fuselage>
+     <texture-tail>Liveries/blue/F-23C-Hstabs.jpg</texture-tail>
+	
+	 
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

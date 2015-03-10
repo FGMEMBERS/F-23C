@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+  <PropertyList> 
+    <path>mfd.ac</path>
+    
+    <!-- main screen MFD3 -->		
+	
+	<model>
+		<name>Buttons</name>
+	   <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/mfd3-btn.xml</path>  
+	</model>
+	
+	<model>
+		<name>Radar</name>
+		    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/radar2.xml</path>
+		    <offsets> 
+		      <x-m>0.0</x-m>
+		      <y-m>0.0</y-m>
+		      <z-m>0.0</z-m>
+				</offsets>
+	</model>
+	
+	<animation>
+    <type>select</type>
+    <object-name>Radar</object-name>  
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[2]/page-selected</property>
+          <value>radar</value>
+        </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Buttons</object-name>  
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[2]/page-selected</property>
+          <value>off</value>
+        </equals>
+    </condition>
+  </animation>  
+  	
+
+  </PropertyList>

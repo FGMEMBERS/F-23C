@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>AIM-9-smoke.ac</path>
+    
+	<animation>
+		<type>dist-scale</type>
+		<object-name>r-60</object-name>
+		<interpolation>
+			<entry><ind>0</ind><dep>0.3</dep></entry>
+			<entry><ind>40</ind><dep>1</dep></entry>
+			<entry><ind>16000</ind><dep>4</dep></entry>
+		</interpolation>
+	</animation>
+
+</PropertyList>

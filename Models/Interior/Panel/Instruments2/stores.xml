@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+
+<!-- comms panel -->
+
+<PropertyList>
+
+ 
+   <animation>
+  <type>material</type>
+  <object-name>stores</object-name>
+  <object-name>fwd</object-name>
+  <object-name>aft</object-name>
+  <object-name>ext</object-name>
+  <object-name>1l</object-name>
+  <object-name>2l</object-name>
+  <object-name>3l</object-name>
+  <object-name>3r</object-name>
+  <object-name>2r</object-name>
+  <object-name>1r</object-name>
+  <ambient>
+    <red>0.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.0</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.3</red>
+    <green>0.8</green>
+    <blue>0.3</blue>
+  </emission> 
+ </animation>
+ 
+   <text>
+  <name>stores</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.0065</character-size>
+  <offsets>
+  <x-m>0.0052</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.04</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">STORES MANAGEMENT</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+  <text>
+  <name>fwd</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.0065</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.03</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FWD BAY:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <text>
+  <name>aft</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.0065</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.015</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">AFT BAY:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>ext</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.005</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">EXTERNAL:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>1l</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.005</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">1 LEFT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>2l</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.01</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">2 LEFT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>3l</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.015</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">3 LEFT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>3r</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.02</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">3 RIGHT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>2r</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.025</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">2 RIGHT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>1r</name>
+   <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.03</z-m>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">1 RIGHT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ <animation>
+  <type>material</type>
+  <object-name>left1</object-name>
+  <object-name>left2</object-name>
+  <object-name>left3</object-name>
+  <object-name>right3</object-name>
+  <object-name>right2</object-name>
+  <object-name>right1</object-name>
+  <object-name>fwdbay</object-name>
+  <object-name>aftbay</object-name>
+  
+  <ambient>
+    <red>1.0</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.3</red>
+    <green>0.8</green>
+    <blue>0.3</blue>
+  </emission> 
+ </animation>
+ 
+ <text>
+  <name>left1</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.015</y-m>
+   <z-m>-0.005</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>left2</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.015</y-m>
+   <z-m>-0.01</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[1]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+  <text>
+  <name>left3</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.015</y-m>
+   <z-m>-0.015</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[2]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+  <text>
+  <name>right3</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.015</y-m>
+   <z-m>-0.02</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[5]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+  <text>
+  <name>right2</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.015</y-m>
+   <z-m>-0.025</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[6]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>right1</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.015</y-m>
+   <z-m>-0.03</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[7]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ 
+ <text>
+  <name>fwdbay</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+ <x-m>0.005</x-m>
+   <y-m>0.05</y-m>
+   <z-m>0.03</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[3]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>aftbay</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+  <x-m>0.005</x-m>
+   <y-m>0.05</y-m>
+   <z-m>0.015</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  
+  <truncate type="bool">true</truncate>
+  <property>sim/weight[4]/selected</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ 
+</PropertyList>

@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<model>
+		<name>radar screen</name>
+	   <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/radar-bgrnd.xml</path>
+	   <offsets> 
+	      <x-m>0.00</x-m>
+	      <y-m>0.00</y-m>
+	      <z-m>0.00</z-m>
+			</offsets>	    
+	</model>
+	
+	<model>
+		<name>enav</name>
+    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/enav.xml</path>
+    <offsets> 
+      <x-m>0.022</x-m>
+      <y-m>0.001</y-m>
+      <z-m>0.005</z-m>
+    </offsets>
+	</model>
+ 
+
+	<animation>
+	  <type>scale</type>
+	  <object-name>enav</object-name>
+
+	  <x-factor>1.0</x-factor>
+	  <x-offset>1.0</x-offset>
+	  <y-factor>1.0</y-factor>
+	  <y-offset>1.4</y-offset>
+	  <z-factor>1.0</z-factor>
+	  <z-offset>1.4</z-offset>
+	  <center>
+	   <x-m>0.0</x-m>
+	   <y-m>0.0</y-m>
+	   <z-m>0.0</z-m>
+	  </center>
+	 </animation>
+
+<!-- Buttons --> 
+<text>
+	 <name>norm</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>0.079</y-m>
+      <z-m>0.065</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">NORM</text>
+	</text>
+	<text>
+	 <name>fuel</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>-0.056</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">FUEL</text>
+	</text>
+	<text>
+	 <name>engine</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>-0.034</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">ENG</text>
+	</text>
+	<text>
+	 <name>hydraulic</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>-0.01</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">HYD</text>
+	</text>
+	<text>
+	 <name>waypoint</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>0.015</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">WPT</text>
+      <draw-boundingbox type="bool">true</draw-boundingbox>
+	</text>
+
+
+	<text>
+	 <name>frequency</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>.039</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">FREQ</text>
+	</text>
+
+
+<animation>
+  <type>material</type>
+  <object-name>fuel</object-name>
+  <object-name>engine</object-name>
+  <object-name>hydraulic</object-name>
+  <object-name>waypoint</object-name>
+  <object-name>frequency</object-name>
+  <diffuse>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+    <factor-prop>/instrumentation/illumination/led-brightness</factor-prop>
+  </emission>
+</animation>	
+
+<animation>
+		<object-name>enav</object-name>
+		<type>material</type>
+		<emission>
+			<factor-prop>instrumentation/illumination/lcd-brightness</factor-prop>
+			<red>0.8</red>
+			<green>0.8</green>
+			<blue>0.8</blue>
+		</emission>
+	</animation>
+	
+<animation>
+		<object-name>radar screen</object-name>
+		<type>material</type>
+		<emission>
+			<factor-prop>instrumentation/illumination/lcd-brightness</factor-prop>
+			<red>0.1</red>
+			<green>0.1</green>
+			<blue>0.1</blue>
+		</emission>
+	</animation>
+</PropertyList>
+
+

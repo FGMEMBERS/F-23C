@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+	
+  <!--back-->
+  <!--right -->
+  <!--up -->
+
+  <!-- pylons -->
+  
+  <model>
+    <path>Aircraft/F-23C/Models/Weapons/pylons.xml</path>
+	
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+
+  
+
+  <!--station left 1 -->
+
+
+<model>
+<name>leftDroptank</name>
+<path>Aircraft/F-23C/Models/Weapons/Tank.xml</path>
+
+<offsets>
+<x-m> 1.7  </x-m>
+<y-m> -3.72 </y-m>
+<z-m> -0.9 </z-m>
+<pitch-deg> -1 </pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>leftDroptank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[0]/selected</property>
+<value>L-Droptank</value>
+</equals>
+<equals>
+<property>controls/armament/station[0]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<!-- station left2 -->
+
+<model>
+<name>L-AIM-9-pos-1</name>
+<path>Aircraft/F-23C/Models/Weapons/AIM-9.xml</path>
+<offsets>
+<x-m> 1.7  </x-m>
+<y-m> -4.03 </y-m>
+<z-m> -0.45 </z-m>
+<pitch-deg> 0 </pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>L-AIM-9-pos-1</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>AIM-9 Sidewinder</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+<!-- station left3 -->
+
+<model>
+<name>L-AIM-9-pos-2</name>
+<path>Aircraft/F-23C/Models/Weapons/AIM-9.xml</path>
+<offsets>
+<x-m> 1.7  </x-m>
+<y-m> -3.4 </y-m>
+<z-m> -0.45 </z-m>
+<pitch-deg> 0 </pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>L-AIM-9-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[2]/selected</property>
+<value>AIM-9 Sidewinder</value>
+</equals>
+<equals>
+<property>controls/armament/station[2]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+<!-- station right3 -->
+
+<model>
+<name>R-AIM-9-pos-2</name>
+<path>Aircraft/F-23C/Models/Weapons/AIM-9.xml</path>
+<offsets>
+<x-m> 1.7  </x-m>
+<y-m> 3.4 </y-m>
+<z-m> -0.42 </z-m>
+<pitch-deg> 0 </pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>R-AIM-9-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[5]/selected</property>
+<value>AIM-9 Sidewinder</value>
+</equals>
+<equals>
+<property>controls/armament/station[5]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+
+<!-- station right2 -->
+
+<model>
+<name>R-AIM-9-pos-1</name>
+<path>Aircraft/F-23C/Models/Weapons/AIM-9.xml</path>
+<offsets>
+<x-m> 1.7  </x-m>
+<y-m> 4.03 </y-m>
+<z-m> -0.42 </z-m>
+<pitch-deg> 0 </pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>R-AIM-9-pos-1</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[6]/selected</property>
+<value>AIM-9 Sidewinder</value>
+</equals>
+<equals>
+<property>controls/armament/station[6]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+ <!--station right 1 -->
+
+
+<model>
+<name>rightDroptank</name>
+<path>Aircraft/F-23C/Models/Weapons/Tank.xml</path>
+<offsets>
+<x-m> 1.7  </x-m>
+<y-m> 3.7 </y-m>
+<z-m> -0.9 </z-m>
+<pitch-deg> -1 </pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>rightDroptank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[7]/selected</property>
+<value>R-Droptank</value>
+</equals>
+<equals>
+<property>controls/armament/station[7]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+ 
+
+
+</PropertyList>
+
+

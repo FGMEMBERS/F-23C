@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>mfd-buttons.ac</path>
+ 
+
+<animation>
+  <type>pick</type>
+  <object-name>C2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/MFD[1]/page-selected</property>
+    <value>engman</value>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>C3</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/MFD[1]/page-selected</property>
+    <value>hydraulic</value>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>C1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/MFD[1]/page-selected</property>
+    <value>fuel</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>L1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/enav[0]/selected</property>
+    <value>3</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>L2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/enav[0]/selected</property>
+    <value>0</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>L3</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/enav[0]/selected</property>
+    <value>1</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>L4</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/enav[0]/selected</property>
+    <value>2</value>
+    </binding>
+  </action>
+</animation>
+
+</PropertyList>

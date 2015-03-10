@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>mfd-buttons.ac</path>
+ 
+ 
+ <animation>
+  <type>pick</type>
+  <object-name>C2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+					<command>nasal</command>
+          <script>radar.radar_range_control(1);</script>
+				</binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>C3</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+					<command>nasal</command>
+					<script>radar.radar_mode_toggle();</script>
+				</binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>C1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+					<command>nasal</command>
+          <script>radar.radar_range_control(-1);</script>
+				</binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>R1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+					<command>nasal</command>
+          <script>radar.toggle_radar_standby();</script>
+				</binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>R2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/radar/radar-standby</property>
+      <value>0</value>
+    </binding>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/MFD[2]/page-selected</property>
+    <value>off</value>
+    </binding>
+  </action>
+</animation>
+
+</PropertyList>

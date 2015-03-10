@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+NR/MD F-23Csimulation config.
+
+2003-08-25 Lee Elliott
+************************************************************************
+-->
+
+<PropertyList>
+ <sim>
+  <flight-model>yasim</flight-model>
+  <status>Alpha v0.7</status>
+  <author>Lee Elliott, StuartC</author>
+  <aero>f23-yasim</aero>
+  <fuel-fraction>1.0</fuel-fraction>
+
+  <description>F-23C Black widow II (Rembrandt)( yasim )</description>
+  <rating>
+<FDM type="int">4</FDM>
+<systems type="int">1</systems>
+<cockpit type="int">2</cockpit>
+<model type="int">3</model>
+</rating>
+
+ 
+  
+   <startup>
+   <splash-texture>Aircraft/F-23C/splash.png</splash-texture>
+  </startup>
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y">0.00</x-offset-m>
+    <y-offset-m archive="y">1.10</y-offset-m>
+    <z-offset-m archive="y">-5.80</z-offset-m>
+    <pitch-offset-deg>0</pitch-offset-deg>
+    <default-field-of-view-deg>71</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <current-view>
+   <field-of-view>55.0</field-of-view>
+  </current-view>
+
+  <sound>
+   <path>Aircraft/F-23C/Sounds/sound.xml</path>
+  </sound>
+
+  
+
+    <hud>
+   <path n="1">Aircraft/F-23C/Hud/hud.xml</path>
+
+   <visibility n="1">true</visibility>
+   <palette>
+    <color n="0">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">0.38</red>
+     <green type="float">1.0</green>
+     <blue type="float">0.22</blue>
+    </color>
+    <color n="1">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">1.0</red>
+     <green type="float">0.2</green>
+     <blue type="float">0.0</blue>
+    </color>
+   </palette>
+   <clipping>
+            <left type="double">-95</left>
+            <right type="double">95</right>
+            <top type="double">65</top>
+            <bottom type="double">-170</bottom>
+         </clipping>
+  </hud>
+
+
+  <model>
+   <path>Aircraft/F-23C/Models/F-23C-BlackWidow-II.xml</path>
+  </model>
+
+  <submodels> 
+    		<serviceable type="bool">true</serviceable>
+    		 <path>Aircraft/F-23C/Models/Weapons/loads.xml</path>
+             <path>Aircraft/F-23C/Models/Weapons/pylons.xml</path>
+			 <path>Aircraft/F-23C/Models/Effects/guns/submodels.xml</path>
+  		</submodels>
+  
+  <systems>
+    <autopilot>
+        <path>Aircraft/F-23C/Systems/Autopilot.xml</path>
+      </autopilot>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+   <refuel>
+<type>boom</type>
+<serviceable type="bool">true</serviceable>
+</refuel>
+  </systems>
+  
+  <rendering>
+			<redout>
+				<parameters>
+					<blackout-complete-g>9.1</blackout-complete-g>
+					<blackout-onset-g>7.5</blackout-onset-g>
+				</parameters>
+			</redout>
+  </rendering>
+
+<mp-systems>
+<radar-enabled type="bool">true</radar-enabled>
+<ecm-rwr-enabled type="bool">true</ecm-rwr-enabled>
+<combat-enabled type="bool">true</combat-enabled>
+</mp-systems>	
+
+  <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
+
+<!-- Flap settings -->
+  <flaps>
+   <setting>0.00</setting>
+   <setting>0.08</setting>
+   <setting>0.16</setting>
+   <setting>0.32</setting>
+   <setting>0.48</setting>
+   <setting>0.64</setting>
+   <setting>0.82</setting>
+   <setting>1.00</setting>
+  </flaps>
+
+  <help>
+   <title>F-23C</title>
+   <key>
+    <name>d/f</name>
+    <desc>retract/extend slats</desc>
+   </key>
+   <key>
+    <name>j/k</name>
+    <desc>decrease/increase spoilers</desc>
+   </key>
+   <key>
+    <name>E</name>
+    <desc>fIRE Cannon</desc>
+   </key>
+   <key>
+    <name>8</name>
+    <desc>Fire AIM 9</desc>
+   </key>
+  </help>
+  
+  
+<weight n="0">
+<name>pylon1.L</name>
+<tank>4</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>L-Droptank</name>
+<lbs>2271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+
+<weight n="1">
+<name>pylon2.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	
+
+<weight n="2">
+<name>pylon3.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="3">
+<name>Forward-Bay</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+<opt>
+<name>2xAIM-9 Sidewinder</name>
+<lbs>380.0</lbs>
+</opt>
+</weight>
+
+<weight n="4">
+<name>Rear-Bay</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>2xAIM-9 Sidewinder</name>
+<lbs>380.0</lbs>
+</opt>
+<opt>
+<name>3xAIM-120</name>
+<lbs>1005.0</lbs>
+</opt>
+<opt>
+<name>2xAIM-9 + 3xAIM-120</name>
+<lbs>1385.0</lbs>
+</opt>
+
+</weight>		
+
+<weight n="5">
+<name>pylon3.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="6">
+<name>pylon2.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>	  
+
+<weight n="7">
+<name>pylon1.R</name>
+<tank>5</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>R-Droptank</name>
+<lbs>2271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+  
+
+  <menubar include="Dialogs/menu.xml"/>
+  
+  
+ </sim>
+ 
+ <systems>
+    <autopilot>
+        <path>Aircraft/F-23C/Systems/Autopilot.xml</path>
+      </autopilot>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+   <refuel>
+<type>boom</type>
+<serviceable type="bool">true</serviceable>
+</refuel>
+  </systems>
+ 
+<engines>
+  <engine n="0">
+    <running>true</running>
+    <reverser-position type="double">0.000000</reverser-position>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+    <reverser-position type="double">0.000000</reverser-position>
+  </engine>
+ </engines>
+ 
+ <input>
+    <keyboard include="Nasal/keyboard.xml"/>
+</input>
+  
+<!-- Start with the Parking Brake on -->
+ <controls>
+ <armament>
+      <station n="0">
+        <release type="bool">false</release>
+      </station>
+      <station n="1">
+        <release type="bool">false</release>
+      </station>
+      <station n="2">
+        <release type="bool">false</release>
+      </station>
+      <station n="3">
+        <release type="bool">false</release>
+      </station>
+      <station n="4">
+        <release type="bool">false</release>
+      </station>
+      <station n="5">
+        <release type="bool">false</release>
+      </station>
+      <station n="6">
+        <release type="bool">false</release>
+      </station>
+      <station n="7">
+        <release type="bool">false</release>
+      </station>
+     
+    </armament>
+  <gear>
+   <brake-parking type="double">1.0</brake-parking>
+  </gear>
+ </controls>
+
+<!-- Engine indexes -->
+ <engines>
+  <engine n="0">
+   <engine-num type="int">0</engine-num>
+  </engine>
+  <engine n="1">
+   <engine-num type="int">1</engine-num>
+  </engine>
+ </engines>
+
+<!-- Fuel Tank indexes -->
+ <consumables>
+		<fuel>
+			<tank n="0">
+				<name>FWD fuselage</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="1">
+				<name>AFT fuselage</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<!--
+			<tank n="2">
+				<name>Right AFT fuselage</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+-->
+			<tank n="2">
+				<name>L wing</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="3">
+				<name>R wing</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<!--
+			<tank n="5">
+        <name>Left-tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="6">
+        <name>Right-Tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+			-->
+			</fuel>
+	</consumables>
+ 
+ <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+  
+  <instrumentation include="Models/Interior/Panel/Instruments/mfd/instrumentation.xml">
+  <illumination>
+   <settings>
+    <lcd-brightness-offset type="double">0.25</lcd-brightness-offset>
+    <led-brightness-offset type="double">0.25</led-brightness-offset>
+   </settings>
+   <lcd-brightness type="double">0.75</lcd-brightness>
+   <led-brightness type="double">0.75</led-brightness>
+   <master-brightness type="double">0.74</master-brightness>
+  </illumination>
+  
+  
+  <rwr>
+ <display-lighting-intens type="double">0.4</display-lighting-intens>
+ <symbology-lighting-intens type="double">1</symbology-lighting-intens>
+</rwr>
+
+<enav><selected type="int">3</selected></enav>
+ <radar>
+  <range type="int" archive="y">40</range>
+  <range-factor type="double" archive="n">0.001888</range-factor>
+  <minimized type="bool" archive="y">false</minimized>
+  <selected type="int">3</selected>
+
+      <!-- inicio en pruebas -->
+  <enabled type="bool">true</enabled>
+  <az-field type="double">120</az-field>
+  <range type="double">150</range>
+  <range-selected type="double">50</range-selected>
+  <radar2-range type="double">150</radar2-range>
+  <display-rdr type="bool">true</display-rdr>
+  <radar-standby type="int">3</radar-standby>
+<mode>
+  <rws type="bool">true</rws>
+  <tws-auto type="bool">false</tws-auto>
+</mode>
+
+</radar> 
+
+
+  <radar2>
+   <sweep-width-m type="double">0.0844</sweep-width-m>
+   <range-width-m type="double">0.0846</range-width-m>
+   <radius-ppi-display-m type="double">0.0846</radius-ppi-display-m>
+   <hud-eye-dist-m type="double">0.6705</hud-eye-dist-m>
+   <hud-radius-m type="double">0.071</hud-radius-m>
+  </radar2>
+
+   <radar-awg-9>
+	<ccm-mode-spl type="bool">false</ccm-mode-spl>
+	<ccm-mode-alt-dhf type="bool">false</ccm-mode-alt-dhf>
+	<ccm-mode-trs type="bool">false</ccm-mode-trs>
+	<display-rdr type="bool">true</display-rdr>
+	<display-ir type="bool">false</display-ir>
+	<display-iff type="bool">false</display-iff>
+	<mode type="string">PDS</mode> <!-- PDS, RWS, TWS, PDSTT, PSTT, VSL -->
+	<ant-trk-light type="bool">false</ant-trk-light>
+	<rd-rot-light type="bool">false</rd-rot-light>
+	<jat-light type="bool">false</jat-light>
+	<irot-light type="bool">false</irot-light>
+	</radar-awg-9>
+	
+<!--	
+ <transponder>
+  <standby type="bool">false</standby>
+  <interrogator-standby type="bool">false</interrogator-standby>
+  <modes>
+   <mode-1>
+    <interrogate type="bool">true</interrogate>
+	<respond type="bool">true</respond>
+	<code type="int">78</code>
+   </mode-1>
+   <mode-3A>
+    <interrogate type="bool">true</interrogate>
+	<respond type="bool">true</respond>
+	<code type="int">1001</code>
+   </mode-3A>
+   <mode-C>
+    <interrogate type="bool">true</interrogate>
+	<respond type="bool">true</respond>
+	<pressure-altitude type="int">0</pressure-altitude>
+   </mode-C>
+  </modes> 
+ </transponder>
+  -->
+<!--en pruebas fin -->
+
+ <MDEF>
+  <subsystem-selected type="string">aids</subsystem-selected>
+ </MDEF>
+    <magnetic-compass>
+       <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
+    </magnetic-compass>
+	<tacan>
+	 <power type="bool">1</power>
+	</tacan>
+  <warnings>
+   <warning-suppress type="bool">false</warning-suppress>
+   <attention-lights type="bool">false</attention-lights>
+   <signals>
+    <cat-1-warning type="bool">false</cat-1-warning>
+	<cat-2-warning type="bool">false</cat-2-warning> 
+	<cat-3-warning type="bool">false</cat-3-warning> 
+	<cat-4-warning type="bool">false</cat-4-warning>   
+   </signals>
+   <flags>
+    <gear-limit type="bool">true</gear-limit>
+   </flags>
+  </warnings>
+  
+  <efis>
+
+			<ecam>
+					<display-mode type="string">FUEL</display-mode>
+			</ecam>
+			<nd>
+					<display-mode type="string">VOR</display-mode>
+					<display-mode-knob type="int">2</display-mode-knob>
+					<display-range type="int">40</display-range>
+				
+			</nd>
+			<input>
+				<vor-adf-1 type="int">1</vor-adf-1>
+				<vor-adf-2 type="int">1</vor-adf-2>
+				<CSTR type="bool">1</CSTR>
+				<WPT type="bool">1</WPT>
+				<VORD type="bool">1</VORD>
+				<NDB type="bool">1</NDB>
+				<ARPT type="bool">1</ARPT>
+				<WX type="bool">1</WX>
+				<TERR type="bool">1</TERR>
+				<TRAF type="bool">1</TRAF>
+				<taxi type="bool">1</taxi>
+			</input>
+
+		
+		</efis>
+</instrumentation>
+ 
+ 
+ <nasal>
+<doors>
+<file>Aircraft/F-23C/Nasal/doors.nas</file>
+</doors>
+
+<F-23C>
+<file>Aircraft/F-23C/Nasal/light.nas</file>
+<file>Aircraft/F-23C/Nasal/doors.nas</file>
+<file>Aircraft/F-23C/Nasal/liveries.nas</file>
+<file>Aircraft/F-23C/Nasal/fuel.nas</file>
+<file>Aircraft/F-23C/Nasal/F-23.nas</file>
+
+</F-23C>
+
+    <phd>
+      <file>Aircraft/F-23C/Nasal/phd.nas</file>
+    </phd>
+    <tfs>
+		<file>Aircraft/F-23C/Nasal/terrain_follow.nas</file>
+	</tfs>
+
+  <loader>
+   <file>Aircraft/F-23C/Nasal/f23/f23canvas/canvasloader.nas</file>
+  </loader>
+ <canvas_demo>
+  <file>Aircraft/F23C/Nasal/f23canvas/canvas-test.nas</file>
+ </canvas_demo>
+
+  <guns>
+      <file>Aircraft/F-23C/Nasal/weapons.nas</file>
+      <file>Aircraft/F-23C/Nasal/revi.nas</file>
+   </guns>
+
+<low>
+<file>Aircraft/F-23C/Nasal/low.nas</file>
+</low>
+<!--
+<guns>
+      <file>Aircraft/F-15E/Nasal/weapons.nas</file>
+      <file>Aircraft/F-15E/Nasal/revi.nas</file>
+    </guns>
+-->
+<aar> 
+<file>Aircraft/Generic/aar.nas</file>
+</aar>
+<rwr>
+ <file>Aircraft/F-23C/Models/Interior/Panel/Instruments/rwr/rwr.nas</file>
+</rwr> 
+<radardist>
+<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+</radardist>
+<enav>
+<file>Aircraft/F-23C/Nasal/enav.nas</file>
+</enav>
+<radar>
+<file>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/radar.nas</file> 
+    </radar>
+<radar2>
+<file>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/radar2.nas</file>
+</radar2>
+ <mfd>
+  <file>Aircraft/F-23C/Nasal/mfd.nas</file>
+ </mfd>
+ <terrain-map>
+ <file>Aircraft/F-23C/Nasal/terrain-map.nas</file>
+ </terrain-map>
+
+</nasal>
+
+</PropertyList>

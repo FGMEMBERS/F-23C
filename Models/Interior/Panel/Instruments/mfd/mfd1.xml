@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+
+  <PropertyList> 
+    <path>mfd.ac</path>
+
+<!-- Navigation page -->
+	<model>
+		<name>enav</name>
+    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/waypoint.xml</path>
+  <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Enav Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/wpt0-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>enav</object-name>
+    <object-name>Enav Buttons</object-name>
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>enav</value>
+        </equals>
+    </condition>
+  </animation>
+
+
+<!-- Engine Management page -->
+    <model>
+	<name>Engine Status</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/eng-status.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Engine Status Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/eng-status0-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Engine Status</object-name>    
+    <object-name>Engine Status Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>engman</value>
+        </equals>
+    </condition>
+  </animation>
+
+<!-- Radar page
+    <model>
+	<name>radar</name>
+	    <path>Aircraft/eurofighter/Models/Instruments/radar.xml</path>
+	    <offsets> 
+	      <x-m>0.015</x-m>
+	      <y-m>0.0091</y-m>
+	      <z-m>0.006</z-m>
+	    </offsets>
+    </model>
+
+	<animation>
+	  <type>scale</type>
+	  <object-name>radar</object-name>
+	  <x-factor>1.0</x-factor>
+	  <x-offset>1.0</x-offset>
+	  <y-factor>1.0</y-factor>
+	  <y-offset>1.4</y-offset>
+	  <z-factor>1.0</z-factor>
+	  <z-offset>1.4</z-offset>
+		  <center>
+			   <x-m>0.0</x-m>
+			   <y-m>0.0</y-m>
+			   <z-m>0.0</z-m>
+		  </center>
+	</animation>
+  <animation>
+    <type>select</type>
+    <object-name>radar</object-name>      
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>radar</value>
+        </equals>
+    </condition>
+  </animation>
+ -->
+<!-- Hydraulic page -->
+    <model>
+	<name>Hydraulic</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/hydraulic.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Hydraulic Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/hydraulic0-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Hydraulic</object-name>    
+    <object-name>Hydraulic Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>hydraulic</value>
+        </equals>
+    </condition>
+  </animation>
+
+<!-- Fuel page -->
+    <model>
+	<name>Fuel</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/fuel.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Fuel Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/fuel0-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Fuel</object-name>    
+    <object-name>Fuel Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>fuel</value>
+        </equals>
+    </condition>
+  </animation>
+
+
+<!--
+<animation>
+  <type>pick</type>
+  <object-name>L1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/MFD[0]/page-selected</property>
+    <value>L1</value>
+    </binding>
+  </action>
+</animation>
+-->
+
+<!-- Frequencies page -->
+	<model>
+	 <name>freq</name>
+     <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/frequencies.xml</path>
+     <offsets> 
+	  <x-m>0.002</x-m>
+	  <y-m>0.0</y-m>
+	  <z-m>0.0</z-m>
+	 </offsets>
+	</model>
+    <model>
+	 <name>Freq Buttons</name>
+	 <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/freq0-btn.xml</path>
+	 <offsets> 
+	  <x-m>0.0</x-m>
+	  <y-m>0.0</y-m>
+	  <z-m>0.0</z-m>
+	 </offsets>
+	</model>
+
+  <animation>
+    <type>select</type>
+    <object-name>freq</object-name>
+    <object-name>Freq Buttons</object-name>
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>frequencies</value>
+        </equals>
+    </condition>
+  </animation>
+
+<!-- Situational Analysis page -->
+    <model>
+	<name>Situana</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/situana.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Situana Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/situana0-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Situana</object-name>    
+    <object-name>Situana Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[0]/page-selected</property>
+          <value>situana</value>
+        </equals>
+    </condition>
+  </animation>
+
+  </PropertyList>

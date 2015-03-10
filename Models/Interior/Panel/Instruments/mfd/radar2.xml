@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+  <PropertyList> 
+    
+    <model>
+		<name>radar screen</name>
+	   <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/radar-bgrnd.xml</path>
+	   <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0</y-m>
+	      <z-m>0.0</z-m>
+			</offsets>	    
+	</model>
+
+	<model>
+		<name>radar Buttons</name>
+	   <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/radar-btn.xml</path>  
+	</model>	
+	
+	<model>
+			<name>radar</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/Radar/hsd-radar.xml</path>
+	    <offsets> 
+	      <x-m>-0.048</x-m>
+	      <y-m>0</y-m>
+	      <z-m>0.01</z-m>
+			</offsets>
+  </model>  
+	<!-- scale down vert to fit the screen -->
+  <animation>
+	  <type>scale</type>
+	  <object-name>radar</object-name>
+	  <x-factor>1.0</x-factor>
+	  <x-offset>1.0</x-offset>
+	  <y-factor>1.0</y-factor>
+	  <y-offset>1.0</y-offset>
+	  <z-factor>1.0</z-factor>
+	  <z-offset>0.9</z-offset>
+		  <center>
+			   <x-m>0.0</x-m>
+			   <y-m>0.0</y-m>
+			   <z-m>0.0</z-m>
+		  </center>
+	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>radar</object-name>    
+    <object-name>radar Buttons</object-name>
+    <object-name>radar screen</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[2]/page-selected</property>
+          <value>radar</value>
+        </equals>
+    </condition>
+  </animation>
+	
+	<text>
+	 <name>norm</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.022</x-m>
+      <y-m>0.079</y-m>
+      <z-m>0.062</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">STB</text>
+	</text>
+	<text>
+	 <name>norm</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.022</x-m>
+      <y-m>0.079</y-m>
+      <z-m>0.042</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">OFF</text>
+	</text>
+	<text>
+	 <name>range</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.022</x-m>
+      <y-m>-0.055</y-m>
+      <z-m>-0.079</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">R-</text>
+	</text>
+	<text>
+	 <name>range</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.022</x-m>
+      <y-m>-0.033</y-m>
+      <z-m>-0.079</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">R+</text>
+	</text>
+	<text>
+	 <name>mode</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.0065</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.022</x-m>
+      <y-m>-0.01</y-m>
+      <z-m>-0.079</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">MODE</text>
+	</text>
+	
+	<!-- lighting -->
+	<animation>
+	  <type>material</type>
+	  <object-name>range</object-name>
+	  <object-name>mode</object-name>
+	  <object-name>norm</object-name>
+	  <diffuse>
+	    <red>1.0</red>
+	    <green>1.0</green>
+	    <blue>0.0</blue>
+	  </diffuse>
+	  <emission>
+	    <red>1.0</red>
+	    <green>1.0</green>
+	    <blue>0.0</blue>
+	    <factor-prop>/instrumentation/illumination/led-brightness</factor-prop>
+	  </emission>
+	</animation>
+	
+	<animation>
+		<object-name>radar</object-name>
+		<type>material</type>
+		<emission>
+			<factor-prop>instrumentation/illumination/lcd-brightness</factor-prop>
+			<red>0.8</red>
+			<green>0.8</green>
+			<blue>0.8</blue>
+		</emission>
+	</animation>
+	
+	<animation>
+		<object-name>radar screen</object-name>
+		<type>material</type>
+		<emission>
+			<factor-prop>instrumentation/illumination/lcd-brightness</factor-prop>
+			<red>0.1</red>
+			<green>0.1</green>
+			<blue>0.1</blue>
+		</emission>
+	</animation>
+
+  </PropertyList>

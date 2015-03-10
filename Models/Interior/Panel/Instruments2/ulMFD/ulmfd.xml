@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+
+  
+
+<model>
+    <path>screen.ac</path>
+	
+  </model>
+ 
+ <!-- target data 
+ <model>
+		<path>Aircraft/F-23C/Models/Interior/Panel/Instruments2/ulMFD/target.xml</path>
+			<offsets>
+				<x-m>0</x-m>
+					<y-m>0</y-m>
+				<z-m>1.295</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+-->
+
+</PropertyList>
+

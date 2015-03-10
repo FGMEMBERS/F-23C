@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  
+
+  
+  <!-- Instruments -->
+  <model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/mfd1.xml</path>
+<offsets>
+<x-m> -4.55</x-m>
+<y-m> -0.23</y-m>
+<z-m> 0.74 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/mfd2.xml</path>
+<offsets>
+<x-m> -4.56</x-m>
+<y-m> -0.06</y-m>
+<z-m> 0.44 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/mfd3.xml</path>
+<offsets>
+<x-m> -4.56</x-m>
+<y-m> 0.12</y-m>
+<z-m> 0.74 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<!--
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/HUD/A-10-hud-panel.xml</path>
+<offsets>
+<x-m> -4.54</x-m>
+<y-m> -0.35</y-m>
+<z-m> 0.7 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/Instruments-3d/altimeter/altimeter.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.178</y-m>
+<z-m> 0.61 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/asi/airspeed.xml</path>
+<offsets>
+<x-m> -4.55</x-m>
+<y-m> -0.33</y-m>
+<z-m> 0.615 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/AI/AI.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.255</y-m>
+<z-m> 0.613 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.255</y-m>
+<z-m> 0.53 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/AoA/aoa-gauge.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.329</y-m>
+<z-m> 0.533 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+<offsets>
+<x-m> -4.552</x-m>
+<y-m> 0.057</y-m>
+<z-m> 0.61 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/Instruments-3d/alt/alt.xml</path>
+<offsets>
+<x-m> -4.547</x-m>
+<y-m> 0.06</y-m>
+<z-m> 0.53</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/Fuelflow/fuel-gauges.xml</path>
+<offsets>
+<x-m> -4.551</x-m>
+<y-m> 0.26</y-m>
+<z-m> 0.59 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+-->
+
+<!-- Front Right 
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/radio/A-10-an-arc-186-1.xml</path>
+<offsets>
+<x-m> -4.537</x-m>
+<y-m> 0.288</y-m>
+<z-m> 0.439 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/ils/A-10-ils.xml</path>
+<offsets>
+<x-m> -4.505</x-m>
+<y-m> 0.28</y-m>
+<z-m> 0.404 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/tacan/tacan.xml</path>
+<offsets>
+<x-m> -4.47</x-m>
+<y-m> 0.288</y-m>
+<z-m> 0.365 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/lights/light-left-panel.xml</path>
+<offsets>
+<x-m> -4.37</x-m>
+<y-m> 0.286</y-m>
+<z-m> 0.329 </z-m>
+<pitch-deg>-1</pitch-deg>
+</offsets>
+</model>
+-->
+
+<!-- FRONT LEFT 
+
+<model>
+<path>Aircraft/F-23C/Models/Interior/Panel/Instruments/sas/A-10-sas.xml</path>
+<offsets>
+<x-m> -4.515</x-m>
+<y-m> -0.38</y-m>
+<z-m> 0.434 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+-->
+
+
+
+  
+</PropertyList>
+

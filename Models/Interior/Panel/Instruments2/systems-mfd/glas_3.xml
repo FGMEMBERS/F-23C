@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+sweat by maggse
+    -->
+<PropertyList>
+
+ <path>glas_2.ac</path>
+ 
+  <model>
+		<path>Aircraft/F-23C/Models/Interior/Panel/Instruments2/stores.xml</path>
+			<offsets>
+				<x-m>0.01</x-m>
+					<y-m>0</y-m>
+				<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+</PropertyList>

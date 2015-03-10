@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+
+  <PropertyList> 
+    <path>mfd.ac</path>
+
+<!-- Navigation page -->
+	<model>
+		<name>enav</name>
+    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/enav-w.xml</path>
+    <offsets> 
+      <x-m>0.002</x-m>
+      <y-m>0.00</y-m>
+      <z-m>0.00</z-m>
+    </offsets>
+	</model>
+    <model>
+	<name>Enav Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/enav1-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>enav</object-name>
+    <object-name>Enav Buttons</object-name>
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[1]/page-selected</property>
+          <value>enav</value>
+        </equals>
+    </condition>
+  </animation>
+
+
+<!-- Engine Management page -->
+    <model>
+	<name>Engine Status</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/eng-status.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Engine Status Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/eng-status1-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Engine Status</object-name>    
+    <object-name>Engine Status Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[1]/page-selected</property>
+          <value>engman</value>
+        </equals>
+    </condition>
+  </animation>
+
+
+<!-- Hydraulic page -->
+    <model>
+	<name>Hydraulic</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments//mfd/hydraulic.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Hydraulic Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/hydraulic1-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Hydraulic</object-name>    
+    <object-name>Hydraulic Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[1]/page-selected</property>
+          <value>hydraulic</value>
+        </equals>
+    </condition>
+  </animation>
+
+<!-- Fuel page -->
+    <model>
+	<name>Fuel</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/fuel.xml</path>
+	    <offsets> 
+	      <x-m>0.002</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+    <model>
+	<name>Fuel Buttons</name>
+	    <path>Aircraft/F-23C/Models/Interior/Panel/Instruments/mfd/fuel1-btn.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0.0</y-m>
+	      <z-m>0.0</z-m>
+	</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Fuel</object-name>    
+    <object-name>Fuel Buttons</object-name>    
+    <condition>
+        <equals>
+          <property>instrumentation/MFD[1]/page-selected</property>
+          <value>fuel</value>
+        </equals>
+    </condition>
+  </animation>
+
+
+	
+<text>
+	 <name>norm</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.013</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>0.079</y-m>
+      <z-m>0.065</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">NORM</text>
+	</text>
+	<text>
+	 <name>fuel</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.013</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>-0.056</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">FUEL</text>
+	</text>
+	<text>
+	 <name>engine</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.013</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>-0.034</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">ENG</text>
+
+	</text>
+	<text>
+	 <name>hydraulic</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.013</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>-0.01</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">HYD</text>
+	</text>
+	<text>
+	 <name>waypoint</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.013</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>0.015</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+		<draw-boundingbox type="bool">true</draw-boundingbox>
+	  <type type="string">literal</type>
+	  <text type="string">WPT</text>
+	</text>
+
+
+	<text>
+	 <name>frequency</name>
+	  <font>lcd.txf</font>
+    <character-size type="double">0.013</character-size>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <heading-deg>0</heading-deg>
+      <roll-deg>90</roll-deg>
+      <x-m>0.018</x-m>
+      <y-m>.039</y-m>
+      <z-m>-0.078</z-m>
+    </offsets>
+	  <type type="string">literal</type>
+	  <text type="string">FREQ</text>
+
+	</text>
+
+	
+<!--
+<animation>
+  <type>pick</type>
+  <object-name>L1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/MFD[0]/page-selected</property>
+    <value>L1</value>
+    </binding>
+  </action>
+</animation>
+-->
+  </PropertyList>
