@@ -19,7 +19,7 @@
 
 <!-- controls cluster -->
 <!-- Throttles -->
-  <instrument include="Instruments/throttle-quadrant.xml">
+  <instrument include="Aircraft/Instruments/throttle-quadrant.xml">
    <name>Throttle quadrant</name>
    <params>
     <engine-throttle-control>/autopilot/FCS/targets/engines/engine[0]/target-throttle-norm</engine-throttle-control>
@@ -31,7 +31,7 @@
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/throttle-quadrant.xml">
+  <instrument include="Aircraft/Instruments/throttle-quadrant.xml">
    <name>Throttle quadrant</name>
    <params>
     <engine-throttle-control>/autopilot/FCS/targets/engines/engine[1]/target-throttle-norm</engine-throttle-control>
@@ -44,7 +44,7 @@
   </instrument>
 
 <!-- Flap control -->
-  <instrument include="Instruments/flap-quadrant.xml">
+  <instrument include="Aircraft/Instruments/flap-quadrant.xml">
    <name>Single Step Flap quadrant</name>
    <params>
     <flaps-select>/autopilot/FCS/targets/target-flap-norm</flaps-select>
@@ -56,7 +56,7 @@
   </instrument>
 
 <!-- Reheat controls -->
-  <instrument include="Instruments/reheat-quadrant.xml">
+  <instrument include="Aircraft/Instruments/reheat-quadrant.xml">
    <name>Engine 0 reheat quadrant</name>
    <params>
     <engine-reheat-control>/autopilot/FCS/targets/engines/engine[0]/target-reheat-norm</engine-reheat-control>
@@ -68,7 +68,7 @@
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/reheat-quadrant.xml">
+  <instrument include="Aircraft/Instruments/reheat-quadrant.xml">
    <name>Engine 1 reheat quadrant</name>
    <params>
     <engine-reheat-control>/autopilot/FCS/targets/engines/engine[1]/target-reheat-norm</engine-reheat-control>
@@ -83,7 +83,7 @@
 <!--  end  controls cluster -->
 
 <!-- Traditional instruments -->
-    <instrument include="Instruments/hsi.xml">
+    <instrument include="Aircraft/Instruments/hsi.xml">
       <name>Horizontal Situation Indicator</name>
       <x>34</x>
       <y>108</y>
@@ -91,7 +91,7 @@
       <h>65</h>
     </instrument>
 
-    <instrument include="Instruments/attitude-indicator.xml">
+    <instrument include="Aircraft/Instruments/attitude-indicator.xml">
       <name>Attitude Gyro</name>
       <x>34</x>
       <y>46</y>
@@ -99,7 +99,7 @@
       <h>65</h>
     </instrument>
 
-    <instrument include="Instruments/turn.xml">
+    <instrument include="Aircraft/Instruments/turn.xml">
       <name>Turn Coordinator</name>
       <x>98</x>
       <y>108</y>
@@ -107,7 +107,7 @@
       <h>65</h>
     </instrument>
 
-    <instrument include="Instruments/aoa-indexer.xml">
+    <instrument include="Aircraft/Instruments/aoa-indexer.xml">
       <name>AoAI</name>
       <x>145</x>
       <y>75</y>
@@ -115,7 +115,7 @@
       <h>65</h>
     </instrument>
 
-    <instrument include="Instruments/brakes.xml">
+    <instrument include="Aircraft/Instruments/brakes.xml">
       <name>Brake Indicator Light</name>
       <x>150</x>
       <y>130</y>
@@ -123,7 +123,7 @@
       <h>15</h>
     </instrument>
 
-    <instrument include="Instruments/gear-indicator.xml">
+    <instrument include="Aircraft/Instruments/gear-indicator.xml">
       <name>Gear Indicator Light</name>
       <x>185</x>
       <y>130</y>
@@ -131,7 +131,7 @@
       <h>14</h>
     </instrument>
 
-    <instrument include="Instruments/controls.xml">
+    <instrument include="Aircraft/Instruments/controls.xml">
       <name>Control Position Indicators</name>
       <x>168</x>
       <y>75</y>
@@ -140,7 +140,7 @@
     </instrument>
 
 <!-- Digital instruments -->
-  <instrument include="Instruments/digital-wind-speed-direction.xml">
+  <instrument include="Aircraft/Instruments/digital-wind-speed-direction.xml">
    <name>Wind display</name>
    <x>270</x>
    <y>122</y>
@@ -148,7 +148,7 @@
    <h>34</h>
   </instrument>
 
-  <instrument include="Instruments/digital-ap-speed-kt.xml">
+  <instrument include="Aircraft/Instruments/digital-ap-speed-kt.xml">
    <name>AP Speed-Kt Instruiment</name>
    <params>
     <spd-disp>/autopilot/settings/target-speed-kt</spd-disp>
@@ -161,7 +161,7 @@
   </instrument>
 
 <!-- Right Column 1 -->
-  <instrument include="Instruments/digital-alt.xml">
+  <instrument include="Aircraft/Instruments/digital-alt.xml">
     <name>Altitude display</name>
     <x>766</x>
     <y>130</y>
@@ -169,7 +169,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-agl.xml">
+  <instrument include="Aircraft/Instruments/digital-agl.xml">
     <name>Elevation AGL display</name>
     <x>766</x>
     <y>113</y>
@@ -177,7 +177,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-vsi.xml">
+  <instrument include="Aircraft/Instruments/digital-vsi.xml">
     <name>Vsi display</name>
     <x>766</x>
     <y>96</y>
@@ -185,7 +185,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-accl.xml">
+  <instrument include="Aircraft/Instruments/digital-accl.xml">
     <name>Accel display</name>
     <x>766</x>
     <y>79</y>
@@ -194,7 +194,7 @@
   </instrument>
 
 <!-- Right Column 2 -->
-  <instrument include="Instruments/digital-kias.xml">
+  <instrument include="Aircraft/Instruments/digital-kias.xml">
     <name>KIAS display</name>
     <x>868</x>
     <y>130</y>
@@ -202,7 +202,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-mach.xml">
+  <instrument include="Aircraft/Instruments/digital-mach.xml">
     <name>Mach display</name>
     <x>868</x>
     <y>113</y>
@@ -210,7 +210,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-wgt.xml">
+  <instrument include="Aircraft/Instruments/digital-wgt.xml">
     <name>Weight display</name>
     <x>868</x>
     <y>96</y>
@@ -218,7 +218,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-fuel-tot.xml">
+  <instrument include="Aircraft/Instruments/digital-fuel-tot.xml">
     <name>Fuel tot display</name>
     <x>868</x>
     <y>79</y>
@@ -227,7 +227,7 @@
   </instrument>
 
 <!-- Right Column 3 -->
-  <instrument include="Instruments/digital-roll.xml">
+  <instrument include="Aircraft/Instruments/digital-roll.xml">
     <name>Roll display</name>
     <x>970</x>
     <y>130</y>
@@ -235,7 +235,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-pitch.xml">
+  <instrument include="Aircraft/Instruments/digital-pitch.xml">
     <name>Pitch display</name>
     <x>970</x>
     <y>113</y>
@@ -243,7 +243,7 @@
     <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-aoa.xml">
+  <instrument include="Aircraft/Instruments/digital-aoa.xml">
    <name>AoA display</name>
    <x>970</x>
    <y>96</y>
@@ -251,7 +251,7 @@
    <h>16</h>
   </instrument>
 
-  <instrument include="Instruments/digital-yaw.xml">
+  <instrument include="Aircraft/Instruments/digital-yaw.xml">
    <name>Yaw display</name>
    <x>970</x>
    <y>79</y>
@@ -260,7 +260,7 @@
   </instrument>
 
 <!-- Engine monitors -->
-  <instrument include="Instruments/digital-engine.xml">
+  <instrument include="Aircraft/Instruments/digital-engine.xml">
     <name>Engine 0 display</name>
     <params>
       <eng-num>/engines/engine[0]/engine-num</eng-num>
@@ -279,7 +279,7 @@
     <h>32</h>
   </instrument>
 
-  <instrument include="Instruments/digital-engine.xml">
+  <instrument include="Aircraft/Instruments/digital-engine.xml">
     <name>Engine 1 display</name>
     <params>
       <eng-num>/engines/engine[1]/engine-num</eng-num>
@@ -299,7 +299,7 @@
   </instrument>
 
 <!-- APFC Block -->
-  <instrument include="Instruments/APFCS.xml">
+  <instrument include="Aircraft/Instruments/APFCS.xml">
    <name>AP/FCS Instrument</name>
    <params>
     <ah-select>autopilot/locks/altitude</ah-select>
@@ -313,7 +313,7 @@
    <h>130</h>
   </instrument>
 
-    <instrument include="Instruments/AP-pitch-roll-controller-monitor.xml">
+    <instrument include="Aircraft/Instruments/AP-pitch-roll-controller-monitor.xml">
       <name>FCS pitch and roll controller monitor display</name>
       <condition>
         <equals>
@@ -327,7 +327,7 @@
       <h>84</h>
     </instrument>
 
-    <instrument include="Instruments/AP-climb-controller-monitor.xml">
+    <instrument include="Aircraft/Instruments/AP-climb-controller-monitor.xml">
       <name>FCS climb controller monitor display</name>
       <condition>
         <equals>
@@ -341,7 +341,7 @@
       <h>84</h>
     </instrument>
 
-    <instrument include="Instruments/AP-AGL-monitor.xml">
+    <instrument include="Aircraft/Instruments/AP-AGL-monitor.xml">
       <name>Ap AGL monitor display</name>
       <condition>
         <equals>
@@ -355,7 +355,7 @@
       <h>84</h>
     </instrument>
 
-    <instrument include="Instruments/AP-tfa-targets-monitor.xml">
+    <instrument include="Aircraft/Instruments/AP-tfa-targets-monitor.xml">
       <name>Ap TFA targets monitor display</name>
       <condition>
         <equals>
